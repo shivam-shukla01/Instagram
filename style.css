@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(169, 183, 183);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-body {
+    width: 25vw;
+    height: 80vh;
+    background-color: white;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .box-body::-webkit-scrollbar {
+    display: none;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+    padding: 0px 10px;
+}
+
+.top-info h2 {
+    font-size: 2vw;
+    color: black;
+}
+.top-info i {
+    font-size: 1.9vw;
+    color: black;
+}
+
+.storiyan {
+    height: 12vh;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+      
+    }
+    .storiyan::-webkit-scrollbar {
+        display: none;
+    }
+
+.story {
+   
+    height: 10.5vh;
+    width: 6vw;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    margin: 6px 0px 0px 2px;
+    margin-left: 10px;
+   
+}
+
+.story img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.story-name ul {
+    display: flex;
+    list-style: none;
+}
+
+.story-name ul li {
+   margin-left: 24px;
+   /* padding-right: 8px; */
+   padding-left: 3px;
+   color: black;
+   font-weight: 100;
+   font-size: 0.9rem;
+   
+}
+
+#full-screen {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}
+
+    .bottom-info {
+        /* margin-top: 20px; */
+        display: flex;
+    
+    }
+    .bottom-info #logo {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin: 0px 0px 10px 5px;
+    }
+    
+    .sub-bott-info {
+        display: flex;
+    }
+    
+    .sub-bott-info h4 {
+        color: black;
+        font-weight: 100;
+        margin: 8px 0px 0px 10px;
+    }
+
+
+
+
+.bottom-info img {
+    height: 45vh;
+    width: 100%;
+}
+.bottom-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.bottom-info #logo {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0px 0px 10px 5px;
+}
+
+.sub-bott-info {
+    display: flex;
+}
+
+.sub-bott-info h4 {
+    color: black;
+    margin: 8px 0px 0px 10px;
+}
+
+
+
+#icon2 {
+    color: black;
+    font-size: 1.4rem;
+    margin: 5px 0px 0px 10px;
+}
+
+
+   #para {
+     color: black;
+     font-size: 0.9rem;
+     margin: 5px 0px 0px 10px;
+   }
+
+
+   #para1 {
+    color: rgb(75, 71, 71);
+    font-size: 0.8rem;
+    margin: 5px 0px 0px 10px;
+   }
+
+   #bottom-comm {
+    display: flex;
+   }
+   #para2 {
+    color: black;
+    margin: 5px 0px 0px 10px;
+   }
+   #para3 {
+    color: rgb(68, 64, 64);
+    font-size: 0.9rem;
+    margin: 6px 0px 0px 10px;
+   }
+   #para4 {
+    color: rgb(58, 55, 55);
+    font-size: 0.8rem;
+    margin: 5px 0px 0px 10px;
+   }
+
+   #emoji {
+    margin: 3px 0px 0px 3px;
+   }
+
+   #bottom-nav {
+    background-color: black;
+    height: 6.5vh;
+    margin-top: 10px;
+   }
+
+#bottom-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5rem;
+    color: white;
+}
+#bottom-nav ul li {
+    padding: 5px 10px 0px 10px;
+}
+
+#plus {
+    font-size: 1.9rem;
+}
+
+#prof a {
+    color: white;
+}
+
+
+
+
+
+/* ###########################MEDIAQUERY ##############*/
+
+@media (max-width: 600px) {
+      body {
+      background-color: #fff;
+      }
+    .box-body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+    }
+    .top-info {
+        padding: 6vw;
+    }
+ 
+    .top-info h2{
+        font-size: 6.9vw;
+        
+    }
+    .top-info i {
+        font-size: 6.3vw;
+    }
+    .storiyan {
+        height: 12vh;
+    
+    }
+    .story {
+        width: 23vw;
+        border: 2px solid red;
+       }
+      .story-name ul li  {
+        margin-left: 5vw;
+        font-size: 0.8rem;
+      }
+      #icon2 {
+       margin: 10px 0px 0px 20px;
+      }
+      #para {
+        margin-left: 12px;
+      }
+      #para1 {
+        margin-left: 12px;
+      }
+      #bottom-comm {
+        margin-left: 5px;
+      }
+      #para4 {
+        margin-left: 15px;
+        /* margin-bottom: 15px; */
+      }
+      .sub-bott-info h4 {
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+     
+}
+
